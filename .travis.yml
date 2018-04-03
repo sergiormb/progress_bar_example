@@ -5,9 +5,8 @@ python:
   - "3.4"
   - "3.5"
 install:
-  - make travisci-install
-script:
   - pip install -r requirements.txt
+script:
   - pep8 progress_bar
   - coverage run --source progress_bar tests/test.py
 after_success:
